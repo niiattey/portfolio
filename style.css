@@ -1,0 +1,98 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root {
+  --primary: #2C3E50;
+  --secondary: #18BC9C;
+  --light: #F4F4F4;
+  --dark: #222;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: var(--light);
+  color: var(--dark);
+  line-height: 1.6;
+}
+
+header {
+  background: var(--primary);
+  color: #fff;
+  padding: 1rem 2rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+  color: var(--secondary);
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(to right, var(--primary), var(--secondary));
+  color: white;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero .btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  background: white;
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.hero .btn:hover {
+  background: var(--secondary);
+  color: white;
+}
+
+.about, .content {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  background: var(--primary);
+  color: white;
+}
